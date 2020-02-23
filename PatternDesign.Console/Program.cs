@@ -22,7 +22,6 @@ namespace PatternDesign.Console
                 .AddSingleton<IConsoleWriter, ConsoleWriter>()
                 .AddSingleton<IMenu, Menu>()
                 .AddTransient<IPatternDesign, RunObservePattern>()
-                .AddTransient<IPatternDesign, demopattern>()
                 .BuildServiceProvider();
 
             if (args.Length == 0)

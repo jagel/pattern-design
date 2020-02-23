@@ -16,12 +16,4 @@ namespace Behaivoural.Patterns.Observe
         }
     }
 
-    [PatternAnnotation("demo", "demo inf")]
-    public class demopattern : IPatternDesign
-    {
-        public void Run()
-        {
-            Console.Write("demo pattern is running");
-        }
-    }
 }
