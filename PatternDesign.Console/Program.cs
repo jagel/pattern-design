@@ -17,7 +17,6 @@ namespace PatternDesign.Console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
             var serviceProvider = new ServiceCollection()
                 .AddSingleton<IConsoleWriter, ConsoleWriter>()
                 .AddSingleton<IMenu, Menu>()
