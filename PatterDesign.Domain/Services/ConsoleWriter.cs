@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PatterDesign.Domain.Servies
+namespace PatterDesign.Domain.Services
 {
     public class ConsoleWriter : IConsoleWriter
     {
@@ -26,9 +26,14 @@ namespace PatterDesign.Domain.Servies
             WriteLine(message, ConsoleColor.Blue);
         }
 
-        public void WriteMeesage(string message)
+        public void WriteWarningMessage(string message)
         {
             message = "[Wrn] " + message;
+            WriteLine(message, ConsoleColor.Yellow);
+        }
+
+        public void WriteMeesage(string message)
+        {
             WriteLine(message, ConsoleColor.Yellow);
         }
 
